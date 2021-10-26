@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>OTI - BOOKING</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css2/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css2/font-awesome.min.css">
+    <!-- Simple Line Font -->
+    <link rel="stylesheet" href="css2/pe-icon-7-stroke.css"> >
+
+    <link rel="stylesheet" href="css2/datepicker.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css2/style.css">
+</head>
+
+<body>
+    <!--============================= HEADER =============================-->
+    <header class="header-style2 fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="images/logo.png" alt="logo" style="max-width: 20vh; "><span style="color: white; margin-top: 18px; font-size: 15px;">599-859-0000</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--//END HEADER -->
+    <!--============================= BOOKING SECTION =============================-->
+    <section class="booking-details center-block main-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="margin-top: 50px; color: black;">Book a Meeting Room</h2>
+                    <h6 style="color: black;">Reserve your Desired Space.</h6>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-8 set-sm-fit mb-4">
+                    <form action="#">
+                        <div class="preference-title">
+                            <h4>Meeting Room Preferences</h4>
+                        </div>
+                        <!-- preferences Wrap -->
+                        <div class="preferences">
+                            <!-- Styled radio btn 1 -->
+                            <div class="preference-radio">
+                                <p style="color: black;">Space Type Required</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-4 sm-box">
+                                        <div class="styled-radio">
+                                            <input type="radio" id="option-one" name="selector">
+                                            <label for="option-one">Meeting Room</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4 sm-box">
+                                        <div class="styled-radio">
+                                            <input type="radio" id="option-two" name="selector">
+                                            <label for="option-two">Training Confrence Room</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4 sm-box">
+                                        <div class="styled-radio">
+                                            <input type="radio" id="option-three" name="selector">
+                                            <label for="option-three">VR Engineering & Design Confrence Room </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Styled radio btn 1 -->
+                            <!-- Styled radio btn 2 -->
+                            <div class="preference-radio mt-4">
+                                <p style="color: black;">Choose Catering Capacity</p>
+                                <div class="row">
+                                    <div class="col-md-3 sm-box">
+                                        <div class="styled-radio styled-radio2">
+                                            <input type="radio" id="one-time" name="selector1">
+                                            <label for="one-time">3 - 5 Persons</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 sm-box">
+                                        <div class="styled-radio styled-radio2">
+                                            <input type="radio" id="weekly" name="selector1">
+                                            <label for="weekly" class="radio-offer" data-toggle="tooltip" data-placement="bottom" title="SAVE UP TO 15%">5 - 10 Persons</label>
+                                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 sm-box">
+                                        <div class="styled-radio styled-radio2">
+                                            <input type="radio" id="bi-weekly" name="selector1">
+                                            <label for="bi-weekly">10 - 20 Persons</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 sm-box">
+                                        <div class="styled-radio styled-radio2">
+                                            <input type="radio" id="monthly" name="selector1">
+                                            <label for="monthly">No Catering</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //Styled radio btn 2 -->
+                            <div class="row">
+                                <!-- Home about -->
+                                <div class="col-md-12">
+                                    <div class="preference-about_home">
+                                        <h4>Choose Desired Equipment</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="preference-icon">
+                                        <img src="images/double-bed.svg">
+                                        <p> Visual Projector </p>
+                                    </div>
+                                    <div class="preference-quantity">
+                                        <div class="counter js-counter">
+                                            <div class="counter__item">
+                                                <a class="counter__minus js-counter-btn fa fa-minus" aria-hidden="true" data-action="minus"></a>
+                                            </div>
+                                            <div class="counter__item counter__item--center"> 
+                                                <input class="counter__value js-counter-value" type="text" value="1" disabled="disabled" tabindex="-1" min="0" max="10" required />
+                                            </div>
+                                            <div class="counter__item">
+                                                <a class="counter__plus js-counter-btn fa fa-plus" aria-hidden="true" data-action="plus"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="preference-icon">
+                                        <img src="images/shower.svg">
+                                        <p>Polycom Soundstation</p>
+                                    </div>
+                                    <div class="preference-quantity">
+                                        <div class="counter js-counter">
+                                            <div class="counter__item">
+                                                <a class="counter__minus js-counter-btn fa fa-minus" aria-hidden="true" data-action="minus"></a>
+                                            </div>
+                                            <div class="counter__item counter__item--center">
+                                                <input class="counter__value js-counter-value" type="text" value="1" disabled="disabled" tabindex="-1"  min="0" max="10" required/>
+                                            </div>
+                                            <div class="counter__item">
+                                                <a class="counter__plus js-counter-btn fa fa-plus" aria-hidden="true" data-action="plus"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Home about -->
+                            <div class="preference-radio mt-4">
+                                <!-- Styled Check box -->
+                                <p>Need any extras?</p>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                      </div>
+                                      </div>
+                            </div>
+                            <!--// Styled Check box -->
+                            <div class="preference-radio mt-4">
+                                <!-- Comment box -->
+                                <p>Do you have any special requerments? <span class="optional-fade">(optional)</span></p>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <textarea class="optinal-textarea"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Comment box -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="preference-about_home">
+                                        <h4>Choose hours and dates</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- Houres and Calendar -->
+                                <div class="col-md-6">
+                                    <div class="preference-radio mt-4">
+                                        <p>How many hours?</p>
+                                        <div class="preference-quantity houres">
+                                            <div class="counter js-counter">
+                                                <div class="counter__item">
+                                                    <a class="counter__minus js-counter-btn fa fa-minus" aria-hidden="true" data-action="minus"></a>
+                                                </div>
+                                                <div class="counter__item counter__item--center">
+                                                    <input class="counter__value js-counter-value" type="text" value="1" disabled="disabled" tabindex="-1" />
+                                                </div>
+                                                <div class="counter__item">
+                                                    <a class="counter__plus js-counter-btn fa fa-plus" aria-hidden="true" data-action="plus"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="preference-radio mt-4">
+                                        <p>Choose a date?</p>
+                                        <div class="form-group">
+                                            <div class="col-xs-5 date">
+                                                <div class="input-group input-append date" id="datePicker">
+                                                    <input type="text" class="form-control" name="date" />
+                                                    <span class="input-group-addon add-on"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Houres and Calendar -->
+                            <div class="preference-radio mt-4">
+                                <!-- Styled radio btn 3 -->
+                                <p>When do you like to start?</p>
+                                <div class="row">
+                                    <div class="col-md-3 sm-box">
+                                        <div class="styled-radio styled-radio2">
+                                            <input type="radio" id="timer1" name="selector2">
+                                            <label for="timer1">7:00 AM</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 sm-box">
+                                        <div class="styled-radio styled-radio2">
+                                            <input type="radio" id="timer2" name="selector2">
+                                            <label for="timer2">9:00 AM</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 sm-box">
+                                        <div class="styled-radio styled-radio2 radio-disable">
+                                            <input type="radio" id="timer3" name="selector2" disabled>
+                                            <label for="timer3" disabled>11:00 PM</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 sm-box">
+                                        <div class="styled-radio styled-radio2">
+                                            <input type="radio" id="timer4" name="selector2">
+                                            <label for="timer4">1:00 PM</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-md-3 sm-box">
+                                        <div class="styled-radio styled-radio2">
+                                            <input type="radio" id="timer5" name="selector2">
+                                            <label for="timer5">3:00 PM</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 sm-box">
+                                        <div class="styled-radio styled-radio2">
+                                            <input type="radio" id="timer6" name="selector2">
+                                            <label for="timer6">5:00 PM</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 sm-box">
+                                        <div class="styled-radio styled-radio2">
+                                            <input type="radio" id="timer7" name="selector2">
+                                            <label for="timer7">7:00 PM</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 sm-box">
+                                        <div class="styled-radio styled-radio2 radio-disable">
+                                            <input type="radio" id="timer8" name="selector2" disabled>
+                                            <label for="timer8" disabled>9:00 PM</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Styled radio btn 3 -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="preference-about_home">
+                                        <h4>Payment Method</h4>
+                                        <div class="payment-icon">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                            <p>256 bit Secure<br> SSL Encryption</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="preference-radio mt-4">
+                                <!-- Card Details -->
+                                <p>Credit Card details</p>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card-details">
+                                            <input type="number" placeholder="Card number" class="card-number card-num">
+                                            <img src="images/visa.png" class="visa-img" alt="visa-icon">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-3">
+                                        <div class="card-details">
+                                            <input type="number" placeholder="MM/YY" class="card-number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card-details">
+                                            <input type="number" placeholder="CVV" class="card-number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-details">
+                                            <input type="text" placeholder="Name as on Card" class="card-number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Card Details -->
+                            <div class="preference-radio mt-5">
+                                <!-- Personal Details -->
+                                <p>Pesonal Details</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card-details">
+                                            <input type="email" placeholder="Email Address" class="card-number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-details">
+                                            <input type="number" placeholder="Phone Number" class="card-number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-9">
+                                        <div class="card-details">
+                                            <input type="text" placeholder="Your Full Address" class="card-number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card-details">
+                                            <input type="number" placeholder="10023" class="card-number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-12">
+                                        <div class="terms-reminder">
+                                            <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Check this custom checkbox</span>
+                  </label>
+                                        </div>
+                                        <div class="terms-reminder">
+                                            <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">I read and agree to the <a href="#">terms & conditions</a></span>
+                  </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-md-12">
+                                        <button class="btn btn-block complete-booking" type="submit"><span class="pe-7s-unlock"></span>Complete Booking <span class="d-none d-md-inline-block">via Secure Server</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Personal Details -->
+                        </div>
+                        <!--// preferences Wrap -->
+                    </form>
+                </div>
+
+                <!-- Booking Summary -->
+                <div class="col-md-4 set-sm-fit">
+                    <div data-toggle="affix">
+                        <!-- data-toggle="affix" -->
+                        <div class="preference-title">
+                            <h4>Booking Summary</h4>
+                        </div>
+                        <div class="fesilities">
+                            <ul>
+                                <li><i class="fa fa-bookmark" aria-hidden="true"></i>
+                                    <p>OTI Business Center</p>
+                                </li>
+                                <li><i class="fa fa-calendar" aria-hidden="true"></i>
+                                    <p>Tues. 12/31/2021 @ 9:00 AM</p>
+                                </li>
+                                <li><i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    <p>4 hours</p>
+                                </li>
+                                <li><i class="fa fa-refresh" aria-hidden="true"></i>
+                                    <p>One time</p>
+                                </li>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <p>Tbilisi-Georgia</p>
+                                </li>
+                            </ul>
+                            <h4>Total cost<span> 150 GEL </span></h4>
+                        </div>
+                    </div>
+
+                </div>
+                <!--// Booking Summary -->
+            </div>
+        </div>
+    </section>
+    <!--//END BOOKING SECTION -->
+
+
+
+
+
+
+
+    <!-- jQuery, Bootstrap JS. -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Slick JS -->
+    <script src="js/slick.min.js"></script>
+    <!-- Date Picker JS -->
+    <script src="js/datepicker.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
